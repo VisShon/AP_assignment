@@ -101,6 +101,7 @@ class slots{
         }
     }
 }
+
 class a1{
     static void menu(){
         System.out.println("--------------------------------"
