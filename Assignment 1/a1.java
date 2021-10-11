@@ -202,6 +202,7 @@ class a1{
                 int id = Integer.parseInt(br.readLine());
                 int gap=0;
                 int d=0;
+                int numd=0;
                 String v="";
                 Hospital hptl=new Hospital("",0,0);
                 Citizen c3=new Citizen("",0,0);
@@ -235,6 +236,12 @@ class a1{
                         if(p.l==l3){
                             d=p.day;
                             v=p.name;
+                            for(Vaccine b:Vaccine){
+                                if(b.getName().equals(v)){
+                                    numd=b.getNum();
+                                }
+                            }
+                            p.quant-=numd;
                         }
                     }
                     for(Vaccine vic:Vaccine){
@@ -298,6 +305,12 @@ class a1{
                         if(p.l==l2){
                             d=p.day;
                             v=p.name;
+                            for(Vaccine b:Vaccine){
+                                if(b.getName().equals(v)){
+                                    numd=b.getNum();
+                                }
+                            }
+                            p.quant-=numd;
                         }
                     }
                     for(Vaccine vic:Vaccine){
