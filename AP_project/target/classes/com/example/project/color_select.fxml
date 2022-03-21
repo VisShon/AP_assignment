@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="scenepane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.color_Select_Controller">
+   <children>
+      <ImageView fx:id="snakebackground" fitHeight="514.0" fitWidth="612.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../background.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="choose_col_text" fitHeight="436.0" fitWidth="364.0" layoutX="73.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../select.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="check_box_upper" layoutX="130.0" layoutY="167.0" mnemonicParsing="false" onAction="#UpperCheckBox" opacity="0.5" prefHeight="18.0" prefWidth="18.0" />
+      <CheckBox fx:id="check_box_lower" layoutX="130.0" layoutY="268.0" mnemonicParsing="false" onAction="#LowerCheckBox" opacity="0.5" prefHeight="18.0" prefWidth="18.0" />
+      <Button fx:id="exit_button" layoutX="104.0" layoutY="397.0" mnemonicParsing="false" onAction="#exitButtonPressed" opacity="0.0" prefHeight="49.0" prefWidth="52.0" text="exit" />
+      <Button fx:id="play_button" layoutX="282.0" layoutY="401.0" mnemonicParsing="false" onAction="#PlayButtonPressed" opacity="0.0" prefHeight="41.0" prefWidth="99.0" text="play" />
+      <TextField fx:id="text_box_p1_upper" alignment="CENTER" layoutX="209.0" layoutY="144.0" opacity="0.51" prefHeight="32.0" prefWidth="162.0" promptText="PLAYER 1" text="PLAYER 1" />
+      <TextField fx:id="text_box_p2_upper" alignment="CENTER" layoutX="209.0" layoutY="185.0" opacity="0.5" prefHeight="32.0" prefWidth="162.0" promptText="PLAYER 2" text="PLAYER 2" />
+      <TextField fx:id="text_box_p1_lower" alignment="CENTER" layoutX="209.0" layoutY="242.0" opacity="0.5" prefHeight="32.0" prefWidth="162.0" promptText="PLAYER 1" text="PLAYER 1" />
+      <TextField fx:id="text_box_p2_lower" alignment="CENTER" layoutX="209.0" layoutY="280.0" opacity="0.5" prefHeight="32.0" prefWidth="162.0" promptText="PLAYER 2" text="PLAYER 2" />
+   </children>
+</AnchorPane>

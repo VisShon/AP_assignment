@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="scenepane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="478.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.FirstPageController">
+   <children>
+      <ImageView fx:id="snakeLogo" fitHeight="635.0" fitWidth="486.0" layoutY="-151.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../First%20page.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="play_image" fitHeight="67.0" fitWidth="161.0" layoutX="163.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Play.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="exit_image" accessibleRole="BUTTON" fitHeight="48.0" fitWidth="51.0" layoutX="218.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../back.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="playbutton" layoutX="162.0" layoutY="300.0" mnemonicParsing="false" onAction="#PlayButtonPressed" opacity="0.0" prefHeight="46.0" prefWidth="162.0" text="play" />
+      <Button fx:id="exit_button" layoutX="218.0" layoutY="369.0" mnemonicParsing="false" onAction="#exitButtonPressed" opacity="0.0" prefHeight="45.0" prefWidth="51.0" text="exit" />
+   </children>
+</AnchorPane>
